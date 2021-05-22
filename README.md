@@ -1,5 +1,7 @@
 # Discorver CEP frontend
 
+Acesse o site em: https://discover-cep.netlify.app/
+
 ## Dependências
 
 - [git](https://git-scm.com/)
