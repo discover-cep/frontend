@@ -14,7 +14,9 @@ const Input = ({
   placeholder, name, disabled, onChange,
 }: ComponentProps): ReactElement => {
   const [localDisabled, setLocalDisabled] = useState(false);
-  const [values, meta, helpers] = useField(name);
+  const field = useField(name);
+  const values = field[0];
+  const helpers = field[2];
   return (
     <div className="input-container">
       <Field

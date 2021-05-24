@@ -48,6 +48,7 @@ function App():ReactElement {
       <Header />
       <Formik
         initialValues={initialValues}
+        // eslint-disable-next-line no-console
         onSubmit={(values) => console.log(values)}
         validationSchema={Schema}
       >
