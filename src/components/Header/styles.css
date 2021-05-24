@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header>img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header>h1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #FFC800;
+}
+
+.header>h1>strong {
+  font-weight: 500;
+  color: #B3C156;
+  font-size: 1.5rem;
+}

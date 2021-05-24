@@ -1,0 +1,42 @@
+.input-container {
+  position: relative;
+  margin-top: 50px;
+  width: 280px;
+}
+
+.input {
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.input:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.label {
+  position: absolute;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.35);
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: text;
+  user-select: none;
+  transition: 0.15s ease-in-out;
+}
+
+.input.not-empty+.label,
+.input:focus+.label {
+  top: -10px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.6);
+}
